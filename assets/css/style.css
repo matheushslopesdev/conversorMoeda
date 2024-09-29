@@ -1,187 +1,189 @@
 /* Reset */
 * {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
 
 /* Body */
 body {
-    font-family: 'Helvetica Neue', sans-serif;
-    background-color: #f4f4f9;
-    color: #333;
-    line-height: 1.6;
+  font-family: 'Helvetica Neue', sans-serif;
+  background-color: #f4f4f9;
+  color: #333;
+  line-height: 1.6;
 }
 
 /* Header */
 header {
-    background-color: #00796b;
-    color: white;
-    padding: 15px 0;
-    text-align: center;
+  background-color: #00796b;
+  color: white;
+  padding: 15px 0;
+  text-align: center;
 }
 
 header h1 {
-    font-size: 26px;
-    letter-spacing: 2px;
-    font-weight: 300;
+  font-size: 26px;
+  letter-spacing: 2px;
+  font-weight: 300;
 }
 
 /* Hero Section */
 .hero {
-    background-color: #ffffff;
-    padding: 60px 20px;
-    text-align: center;
-    border-bottom: 1px solid #e0e0e0;
+  background-color: #ffffff;
+  padding: 60px 20px;
+  text-align: center;
+  border-bottom: 1px solid #e0e0e0;
 }
 
 .hero .container {
-    max-width: 600px;
-    margin: 0 auto;
-    padding: 20px;
-    box-shadow: 0px 10px 30px rgba(0, 0, 0, 0.1);
-    border-radius: 10px;
-    background-color: #fefefe;
-    width: 100%; /* Adicionado para garantir responsividade */
+  max-width: 600px;
+  margin: 0 auto;
+  padding: 20px;
+  box-shadow: 0px 10px 30px rgba(0, 0, 0, 0.1);
+  border-radius: 10px;
+  background-color: #fefefe;
+  width: 100%; /* Adicionado para garantir responsividade */
 }
 
 .hero h2 {
-    font-size: 32px;
-    margin-bottom: 20px;
-    color: #00796b;
-    font-weight: 400;
+  font-size: 32px;
+  margin-bottom: 20px;
+  color: #00796b;
+  font-weight: 400;
 }
 
 .hero p {
-    font-size: 18px;
-    margin-bottom: 30px;
-    color: #666;
+  font-size: 18px;
+  margin-bottom: 30px;
+  color: #666;
 }
 
 /* Converter */
 .converter {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    gap: 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 20px;
 }
 
 .converter .inputs {
-    display: flex;
-    justify-content: space-between;
-    gap: 20px;
-    width: 100%;
-    flex-wrap: wrap; /* Permite que os inputs se ajustem em telas menores */
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  width: 100%;
+  flex-wrap: wrap; /* Permite que os inputs se ajustem em telas menores */
+
 }
 
 .converter label {
-    font-size: 16px;
-    font-weight: 500;
-    color: #00796b;
-    display: block;
-    margin-bottom: 8px;
+  font-size: 16px;
+  font-weight: 500;
+  color: #00796b;
+  display: block;
+  margin-bottom: 8px;
 }
 
 .converter input {
-    padding: 15px;
-    font-size: 20px;
-    flex: 1;
-    min-width: 0; /* Garante que os inputs não estourem o container */
-    border: 2px solid #00796b;
-    border-radius: 8px;
-    color: #333;
-    background-color: #f9f9f9;
-    transition: border-color 0.3s ease, background-color 0.3s ease;
-    box-shadow: inset 0 1px 4px rgba(0, 0, 0, 0.1);
-    width: 100%; /* Garante que o input use 100% do espaço */
+  padding: 15px;
+  font-size: 20px;
+  flex: 1;
+  min-width: 0; /* Garante que os inputs não estourem o container */
+  border: 2px solid #00796b;
+  border-radius: 8px;
+  color: #333;
+  background-color: #f9f9f9;
+  transition: border-color 0.3s ease, background-color 0.3s ease;
+  box-shadow: inset 0 1px 4px rgba(0, 0, 0, 0.1);
+  width: 100%; /* Garante que o input use 100% do espaço */
+  align-content: center;
 }
 
 .converter input:focus {
-    outline: none;
-    border-color: #004d40;
-    background-color: #e0f7fa;
+  outline: none;
+  border-color: #004d40;
+  background-color: #e0f7fa;
 }
 
 .converter input[readonly] {
-    background-color: #e0f2f1;
+  background-color: #e0f2f1;
 }
 
 .converter button {
-    padding: 15px 40px;
-    font-size: 20px;
-    background-color: #00796b;
-    color: white;
-    border: none;
-    border-radius: 8px;
-    cursor: pointer;
-    transition: background-color 0.3s ease, transform 0.2s ease;
-    width: 100%;
-    max-width: 300px;
-    font-weight: bold;
+  padding: 15px 40px;
+  font-size: 20px;
+  background-color: #00796b;
+  color: white;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: background-color 0.3s ease, transform 0.2s ease;
+  width: 100%;
+  max-width: 300px;
+  font-weight: bold;
 }
 
 .converter button:hover {
-    background-color: #004d40;
-    transform: translateY(-2px);
+  background-color: #004d40;
+  transform: translateY(-2px);
 }
 
 /* Footer */
 footer {
-    background-color: #00796b;
-    color: white;
-    text-align: center;
-    padding: 20px 0;
-    margin-top: 60px;
+  background-color: #00796b;
+  color: white;
+  text-align: center;
+  padding: 20px 0;
+  margin-top: 60px;
 }
 
 footer p {
-    font-size: 14px;
-    letter-spacing: 1px;
-    font-weight: 300;
+  font-size: 14px;
+  letter-spacing: 1px;
+  font-weight: 300;
 }
 
 /* Media Queries for Responsiveness */
 @media (max-width: 768px) {
-    .converter .inputs {
-        flex-direction: column; /* Coloca os inputs um embaixo do outro em telas menores */
-        gap: 10px;
-    }
+  .converter .inputs {
+      flex-direction: column; /* Coloca os inputs um embaixo do outro em telas menores */
+      gap: 10px;
+  }
 
-    .hero h2 {
-        font-size: 28px;
-    }
+  .hero h2 {
+      font-size: 28px;
+  }
 
-    .hero p {
-        font-size: 16px;
-    }
+  .hero p {
+      font-size: 16px;
+  }
 
-    .converter input {
-        font-size: 18px;
-        padding: 12px;
-    }
+  .converter input {
+      font-size: 18px;
+      padding: 12px;
+  }
 
-    .converter button {
-        font-size: 18px;
-        padding: 12px 30px;
-    }
+  .converter button {
+      font-size: 18px;
+      padding: 12px 30px;
+  }
 }
 
 @media (max-width: 480px) {
-    .hero h2 {
-        font-size: 24px;
-    }
+  .hero h2 {
+      font-size: 24px;
+  }
 
-    .hero p {
-        font-size: 14px;
-    }
+  .hero p {
+      font-size: 14px;
+  }
 
-    .converter input {
-        font-size: 16px;
-        padding: 10px;
-    }
+  .converter input {
+      font-size: 16px;
+      padding: 10px;
+  }
 
-    .converter button {
-        font-size: 16px;
-        padding: 10px 20px;
-    }
+  .converter button {
+      font-size: 16px;
+      padding: 10px 20px;
+  }
 }
